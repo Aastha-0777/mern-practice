@@ -1,19 +1,12 @@
 # Learning26
 
-<div align="center">
-
 **A beginner-friendly React practice playground built with Vite and JavaScript**
 
 [![React](https://img.shields.io/badge/React-19.3-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
-<br />
-
-<img src="src/assets/hero.png" alt="Learning26 project preview" width="520" />
-
-</div>
+![Decorative purple project graphic](./src/assets/hero.png)
 
 ---
 
@@ -23,19 +16,18 @@ Learning26 is a small React 19 application created as a MERN stack learning exer
 
 The current interface is intentionally simple and serves as a clean starting point for future experiments.
 
-## Live app flow
+## App flow
 
-```mermaid
-flowchart LR
-    A[index.html] --> B[src/main.jsx]
-    B --> C[src/App.jsx]
-    C --> D[Header]
-    C --> E[Content]
-    C --> F[Footer]
+```text
+index.html
+└── src/main.jsx
+    └── src/App.jsx
+        ├── Header
+        ├── Content
+        └── Footer
 ```
 
-<details open>
-<summary><strong>Explore the live component structure</strong></summary>
+### Component structure
 
 | Component | Responsibility |
 |---|---|
@@ -43,18 +35,13 @@ flowchart LR
 | [`Content`](src/components/Content.jsx) | Demonstrates variables, objects, JSX expressions, and conditional rendering |
 | [`Footer`](src/components/Footer.jsx) | Renders the bottom banner with the text `FOOTER` |
 
-</details>
-
-<details>
-<summary><strong>See what the Content component renders</strong></summary>
+### What the Content component renders
 
 - A React welcome heading
 - The year `2026`
 - Country: `India`
 - The active status resolved by a ternary expression
 - A user ID and username from a JavaScript object
-
-</details>
 
 ## Tech stack
 
@@ -92,8 +79,7 @@ learning26/
 └── vite.config.js
 ```
 
-<details>
-<summary><strong>Learn how the files work together</strong></summary>
+### How the files work together
 
 - `main.jsx` mounts the React application into `#root`.
 - `App.jsx` assembles the header, content, and footer.
@@ -102,8 +88,6 @@ learning26/
 - `App.css` includes reusable starter styles.
 - `index.css` provides global and template-level styles.
 - `vite.config.js` enables the official React plugin.
-
-</details>
 
 ## Getting started
 
@@ -139,42 +123,26 @@ Open the local URL printed by Vite, usually <http://localhost:5173>.
 
 ## React concepts used
 
-<details open>
-<summary><strong>1. Components</strong></summary>
-
+### Components
 The application is divided into `Header`, `Content`, and `Footer` components.
 
-</details>
-
-<details>
-<summary><strong>2. JSX expressions</strong></summary>
-
+### JSX expressions
 Values are inserted into the UI using curly braces, such as `{year}` and `{country}`.
 
-</details>
-
-<details>
-<summary><strong>3. Conditional rendering</strong></summary>
-
+### Conditional rendering
 The active state is displayed with a ternary expression:
 
 ```jsx
 {isActive ? "Active" : "Not Active"}
 ```
 
-</details>
-
-<details>
-<summary><strong>4. JavaScript objects</strong></summary>
-
+### JavaScript objects
 Object properties are accessed through JSX:
 
 ```jsx
 {user.id}
 {user.userName}
 ```
-
-</details>
 
 ## Ideas for the next iteration
 
@@ -192,8 +160,4 @@ This project is currently a personal learning project. Add a `LICENSE` file if y
 
 ---
 
-<div align="center">
-
 Built by **Aastha** as part of MERN learning journey
-
-</div>
