@@ -11,7 +11,8 @@ export const Content = () => {
   // var x = null;
 
   return (
-    <div>
+    <div style={{textAlign : "center", margin : "10px", height : "99%", width : "99%", border : "2px solid"}}>
+      <h1 style={{color : "darkmagenta"}}>Contents : </h1>
       <h1>Hello This is From React</h1>
       <h2>Year : {year}</h2>
       <h2>Country : {country}</h2>

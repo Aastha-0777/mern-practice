@@ -6,13 +6,17 @@ import { Header } from './components/Header'
 import './App.css'
 import { Footer } from './components/Footer'
 import { Content } from './components/Content'
+import { Match } from './components/Match'
+import { Nvidia } from './components/Nvidia'
 
 function App() {
 
   return (
     <div>
       <Header></Header>
-      <Content></Content>
+      <Nvidia></Nvidia>
+      {/* <Match></Match> */}
+      {/* <Content></Content> */}
       <Footer></Footer>
     </div>
   );
